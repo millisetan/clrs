@@ -156,7 +156,6 @@ void insert(struct rb_root *root, int key)
         insert_rebalance(node, root);
 }
 
-<<<<<<< HEAD
 delete_rebalance(struct rb_root *root, struct rb_node *node, struct rb_node *parent)
 {
 
@@ -170,7 +169,6 @@ struct rb_node *delete(struct rb_root *root, int key)
                 struct rb_node *right;
                 if (right = node->rb_right) {
                         if (right0>
-=======
 void delete_rebalance(struct rb_root *root, struct rb_node *node, struct rb_node *parent)
 {
 	struct rb_node *sibling;
@@ -242,8 +240,6 @@ void rb_transplant(struct rb_root *root, struct rb_node *from, struct rb_node *t
 	to->color = save->color;
 }
 
-
-
 struct rb_node *delete(struct rb_root *root, int key)
 {
         struct rb_node *node, *parent;
@@ -287,7 +283,5 @@ struct rb_node *delete(struct rb_root *root, int key)
 		return node;
 	}
 }
-
->>>>>>> refs/remotes/origin/master
 
          
